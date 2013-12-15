@@ -8,14 +8,12 @@ import java.util.HashMap;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
-import javax.swing.JTextField;
 import javax.swing.JTree;
 import javax.swing.WindowConstants;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 import java.awt.Font;
 
 
@@ -26,7 +24,6 @@ import java.awt.Font;
  */
 public class Panel
 {
-	private JTextField textField;
 	private DefaultMutableTreeNode main;
 	private DefaultTreeModel modelo;
 	private HashMap<String, RoomNode> roomNodes;

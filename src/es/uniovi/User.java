@@ -54,7 +54,7 @@ public class User {
 	 * Obtener el nick del usuario
 	 * @return String del nick
 	 */
-	public String getNick() {
+	synchronized public String getNick() {
 		return nick;
 	}
 	

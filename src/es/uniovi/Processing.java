@@ -56,7 +56,7 @@ public class Processing extends Thread{
 	
 	private void typeProcessing(Message msg) {
 		if (msg.isValid()) {
-			// Si no se env�a comando, error
+			// Si no se env���a comando, error
 			if (msg.getPacket() != Message.PKT_CMD) {
 				processingUNKNOW(msg);
 				return;
@@ -235,7 +235,7 @@ public class Processing extends Thread{
 				ArrayList<User> users = this.global.getRoomUsers().get(room);
 
 				for (int i = 0; i < users.size(); i++) {
-					if (users.get(i).getNick() == (msg.getUser().getNick())) {
+					if (users.get(i).getNick().equals(msg.getUser().getNick())) {
 						constructMessage(Message.TYPE_LEAVE, Message.PKT_OK,  new String[] { msg.getUser().getNick(), room }, users.get(i));
 					} else {
 						constructMessage(Message.TYPE_LEAVE, Message.PKT_INF, new String[] { msg.getUser().getNick(), room }, users.get(i));
@@ -289,7 +289,7 @@ public class Processing extends Thread{
 			ArrayList<User> users = this.global.getRoomUsers().get(room);
 
 			for (int i = 0; i < users.size(); i++) {
-				if (users.get(i).getNick() == (msg.getUser().getNick())) { 
+				if (users.get(i).getNick().equals(msg.getUser().getNick())) { 
 					constructMessage(Message.TYPE_JOIN, Message.PKT_OK, new String[] {  msg.getUser().getNick(), room } , users.get(i));
 	                i++;
 				} else {
