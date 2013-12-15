@@ -7,6 +7,6 @@ Java IRC Server
 
 Contributors:
 
-  Nicolas Lozano Argüelles nlozanoarguelles ![GitRepo](https://github.com/nlozanoarguelles)
-  Oscar De Arriba odarriba ![GitRepo](https://github.com/odarriba)
-  Pedro Lopez Mareque ![GitRepo](https://github.com/pmareke)
+![GitRepo](https://github.com/nlozanoarguelles)
+![GitRepo](https://github.com/odarriba)
+![GitRepo](https://github.com/pmareke)
